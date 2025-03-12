@@ -1,0 +1,549 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 15px 20px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    height: 40px;
+    margin-right: 20px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    flex-grow: 0;
+    background-color: #00BDFE;
+    white-space: nowrap;
+}
+
+.navbar-menu li {
+    margin-right: 15px;
+    position: relative;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    display: block;
+}
+
+.navbar-menu a:hover {
+    background-color: #009ad9;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.navbar-menu li:hover .dropdown-content {
+    display: block;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right a {
+    text-decoration: none;
+    color: #00BDFE;
+    padding: 8px 12px;
+    margin-left: 10px;
+    border: 1px solid #00BDFE;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.navbar-right a:hover {
+    background-color: #e0f2fe;
+}
+
+.navbar-right a img {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.hamburger-menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    margin-left: 10px;
+}
+
+
+/* =================================
+   Header Styles (Background Image)
+   ================================= */
+
+.header {
+    background-image: url("./assests/images/backgroundimg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: white; /* Set text color to white */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header-content {
+    width: 80%; /* Limit content width */
+    max-width: 800px; /* Maximum width */
+    padding: 20px; /* Add some padding */
+}
+
+.header-content h1 {
+    font-size: 2.5em; /* Adjust heading size */
+    margin-bottom: 20px;
+}
+
+.header-content p {
+    font-size: 1em; /* Adjust paragraph size */
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.header-buttons a {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 0 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.explore-btn {
+    background-color: #00BDFE;
+    color: white;
+}
+.explore-btn:hover{
+    color: #00BDFE;
+    background-color: white;
+}
+
+.watch-btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+.watch-btn:hover{
+    color: #00BDFE;
+}
+
+
+
+/* categoreis/section */
+/* Contest Categories Section */
+.contest-categories {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.section-heading h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.view-all-btn {
+    background-color: #00BDFE;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.view-all-btn:hover{
+    background-color: white;
+    color: #00BDFE;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.category-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.category-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    text-align: left; /* Override center alignment for icon */
+}
+
+.category-icon img {
+    height: 30px;
+    margin-bottom: 0px;
+}
+
+.category-item h3 {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.3em;
+    margin: 0;
+    text-align: left; /* Override center alignment for title */
+}
+
+.category-item p {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.category-image img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+
+.browse-btn {
+    background-color:white;
+    color: #00BDFE;
+    /* padding: 8px 15px; */
+    text-decoration: none;
+    border-radius: 5px;
+}
+.browse-btn:hover{
+    color: white;
+    background-color: #00BDFE;
+}
+
+
+/*g
+   Responsive Design
+ */
+
+   /* setction2 */
+   /* Previous Contests Section */
+.previous-contests {
+    padding: 50px 0;
+    background-color: #f0f0f0;
+}
+
+.previous-contests .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.previous-contests .section-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.previous-contests .section-subtitle {
+    font-size: 0.9em;
+    color:#00BDFE;
+    margin-bottom: 5px;
+}
+.previous-contests h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.previous-contests .contest-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.previous-contests .contest-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.previous-contests .contest-item img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.previous-contests .contest-details {
+    font-size: 0.9em;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Distribute space evenly */
+}
+
+.previous-contests .view-open-contests {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.previous-contests .open-contests-btn {
+    background-color: #e0f2fe;
+    color: #00BDFE;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.open-contests-btn:hover{
+    background-color: #00BDFE;
+    color: white;
+}
+
+.contest-details{
+    display: flex;
+    flex-direction: row;
+}
+.bold{
+    font-weight: bold;
+}
+.detail-label{
+    color: #777;
+    font-weight: 600;
+}
+
+
+/* section4 */
+/* Pricing Plans Section */
+.pricing-plans {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.pricing-plans .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pricing-plans .section-heading {
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-plans .section-subtitle {
+    font-size: 0.9em;
+    color:#00BDFE;
+    margin-bottom: 5px;
+}
+
+.pricing-plans h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.pricing-plans .plan-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.pricing-plans .plan-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.pricing-plans .plan-item img {
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+.pricing-plans .plan-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.pricing-plans .plan-item p {
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.pricing-plans .plan-price {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 15px 0;
+}
+.plan:hover{
+    color: #00BDFE;
+}
+.blue{
+    color: #00BDFE;
+}
+.decor{
+   text-decoration: line-through;
+}
+
+.pricing-plans .choose-plan-btn {
+    background-color:#00BDFE;
+    color:white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+.choose-plan-btn:hover{
+    background-color:white;
+    color:#00BDFE;
+}
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #00BDFE;
+    }
+
+    .navbar-menu li {
+        width: 100%;
+        text-align: left;
+    }
+
+    .navbar-menu li a {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .navbar-menu.show {
+        display: block;
+    }
+
+    .navbar-right {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .section-heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .view-all-btn {
+        margin-top: 10px;
+    }
+
+    .previous-contests .contest-grid {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+
+    .pricing-plans .plan-grid {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+    .navbar-logo img {
+        height: 30px;
+    }
+
+    .navbar-right a {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+}
+
+/* Desktop View (Larger screens) */
+@media (min-width: 1200px) {
+    .navbar-logo img {
+        height: 50px;
+    }
+
+    .navbar-menu li {
+        margin-right: 25px;
+    }
+
+    .navbar-right a {
+        padding: 10px 15px;
+    }
+}
+
+.site-footer {
+    background-color: #00BDFE; /* Background color from the image */
+    color: white; /* Text color */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.site-footer .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+em{
+    font-weight: 600;
+}
+em:hover{
+    color: blue;
+}
